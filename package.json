@@ -16,7 +16,7 @@
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
     "test": "vitest run",
-    "verify": "pnpm check && pnpm test && pnpm build && git diff --exit-code -- dist"
+    "verify": "pnpm check && pnpm test && pnpm build && test -n \"$(git ls-files dist)\" && test -z \"$(git status --porcelain -- dist)\""
   },
   "devDependencies": {
     "jsdom": "^27.0.0",
