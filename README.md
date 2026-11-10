@@ -9,10 +9,12 @@ Used by SendSelf, Blitz, Icarus and Vidshelf.
 
 ## Install
 
-Not on npm: sites install a tagged commit from GitHub.
+Not on npm: sites install a tagged release from GitHub, by its tarball URL
+over https. That works with every pnpm version and needs no git or SSH key in
+CI, where a `github:` spec can resolve to SSH.
 
 ```sh
-pnpm add github:martinezharo/promo-funnel#v1.0.1
+pnpm add https://github.com/martinezharo/promo-funnel/archive/refs/tags/v1.0.1.tar.gz
 ```
 
 `dist/` is committed, so nothing is built on install. Change `src/`, run
