@@ -12,7 +12,7 @@ Used by SendSelf, Blitz, Icarus and Vidshelf.
 Not on npm: sites install a tagged commit from GitHub.
 
 ```sh
-pnpm add github:martinezharo/promo-funnel#v1.0.0
+pnpm add github:martinezharo/promo-funnel#v1.0.1
 ```
 
 `dist/` is committed, so nothing is built on install. Change `src/`, run

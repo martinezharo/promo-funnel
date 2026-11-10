@@ -1,6 +1,6 @@
 {
   "name": "@martinezharo/promo-funnel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "What a visitor who followed a promo from one of the author's sites did next: the shared contract, page tracker and Worker handler.",
   "type": "module",
   "private": true,

@@ -1,1 +1,3 @@
 node_modules/
+# Committed on purpose: sites install this package from GitHub, unbuilt.
+!dist/
